@@ -1,0 +1,99 @@
+js notes
+
+1. basics
+
+->//how to print in js
+console.log("Hello World!");
+
+-> //single line comment
+
+/* 
+multi-line
+comment
+*/
+
+-> /* Window Alert */
+window.alert("This is an alert!");
+
+-> // to change the text content of a html element by its ID
+document.getElementById("heading").textContent="Hello";
+document.getElementById("paragraph").textContent="How you doing?";
+
+2. variables
+
+/*
+
+variable is a container that is used to store value.
+it behaves as if it were the value it contains.
+
+declaration: let x;
+assignment: x=10;
+
+or declaration and assignment: let x = 10;
+*/
+let name = "Ayush Prem";
+let age = 20;
+let intern = false;
+console.log(`My nam is ${name} and i am ${age} years old`);
+console.log(`is ayush interned? : ${intern}`);
+console.log(typeof age); //to know the datatype
+
+3. arithmetic operators
+
+/*
+arithmetic operators = operands (values, variables, etc.)
+operators (+ - * /)
+
++ is add
+- is sub
+* is mul
+/ is div
+** is exponent operator
+% is modulus
+
+augemented aassignment operators
++=, -+, *= etc etc....
+
+increment and decrement
+++ and --
+
+operator precedence
+1. parenthesis ()
+2. exponents
+3. multiplication and division and modulo
+4. addition and subtraction
+
+*/
+
+4. user input
+
+/*
+How to accept user input
+
+1. EASY WAY = window prompt
+2. PROFESSIONAL WAY = HTML textbox
+*/
+
+-> window prompt
+let username;
+username = window.prompt("what's your username?");
+console.log(username);
+
+-> html textbox
+let username;
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("myH1").textContent = `Hello ${username}`
+}
+
+5. type conversion
+
+/*
+type conversion = change the datatype of a value to another
+(string, numbers, booleans)
+*/
+
+let age = window.prompt("how old are you?");
+age = Number(age);
+age += 1;
+console.log(age, typeof age);
