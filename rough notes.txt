@@ -97,3 +97,8 @@ let age = window.prompt("how old are you?");
 age = Number(age);
 age += 1;
 console.log(age, typeof age);
+
+6. constants
+
+// const = a variable that can't be changed
+const PI = 3.14159;
